@@ -4778,6 +4778,579 @@ Azul = comando (proceso de aplicación) · Amarillo = evento de dominio (evento 
         </child>
         <documentation>Agregados del subdominio Consolidación (Core): estructura, invariantes y gráfico de comandos y eventos.</documentation>
       </element>
+      <element xsi:type="archimate:ArchimateDiagramModel" name="V06.3 Agregados, comandos y eventos - Tarjetas VAMOS" id="id-2f052c9cd8d5e66b446d3e62">
+        <child xsi:type="archimate:Note" id="id-08162ce63d91d6a7bf3074c7">
+          <bounds x="10" y="10" width="1750" height="55"/>
+          <content>V6.3 · SUBDOMINIO TARJETAS VAMOS (SOPORTE) — AGREGADOS, COMANDOS Y EVENTOS
+Azul = comando (proceso de aplicación) · Amarillo = evento de dominio (evento de aplicación) · Gris = evento de otro agregado o subdominio que dispara un comando (reacción). Los invariantes están en la nota de cada agregado.</content>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-1d0e11094d7ed196909476f3" archimateElement="id-5cfd50f0cb004c2733c02851">
+          <bounds x="10" y="80" width="930" height="220"/>
+          <child xsi:type="archimate:DiagramObject" id="id-be24e1c21f589ba84b999a83" fillColor="#B4C7E7" archimateElement="id-13d9c15dbc2f6412121e2a19">
+            <bounds x="335" y="35" width="260" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-bb94fb4856e9e0b30cdd8b0d" source="id-be24e1c21f589ba84b999a83" target="id-89a93cd0ec6462df10bffd76" archimateRelationship="id-90aff1b5eca1d28f99456a5a"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-e751afc351eeecd28b31518f" source="id-be24e1c21f589ba84b999a83" target="id-cbfe6cacbbb061f4d0e3f362" archimateRelationship="id-d2e49275a013ed1092e33bd8"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-b079092c3181a6b23b26f8da" source="id-be24e1c21f589ba84b999a83" target="id-cc4907617c368de91e54eac4" archimateRelationship="id-c30cdef2bc6cd1d8f4f9970a"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-66eb53d99397f9df08b98dee" source="id-be24e1c21f589ba84b999a83" target="id-2b23c9d566605379af25d688" archimateRelationship="id-6627e0d0d925302df81a9716"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-89a93cd0ec6462df10bffd76" targetConnections="id-bb94fb4856e9e0b30cdd8b0d" archimateElement="id-5334fb84e4643414f1749a6f">
+            <bounds x="122" y="125" width="160" height="75"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-cbfe6cacbbb061f4d0e3f362" targetConnections="id-e751afc351eeecd28b31518f" archimateElement="id-f44e6a7f29c8c8c212ef8a82">
+            <bounds x="297" y="125" width="160" height="75"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-cc4907617c368de91e54eac4" targetConnections="id-b079092c3181a6b23b26f8da" archimateElement="id-827129884b97a17681b84883">
+            <bounds x="472" y="125" width="160" height="75"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-2b23c9d566605379af25d688" targetConnections="id-66eb53d99397f9df08b98dee" archimateElement="id-b08088de4f49043b3c74ebd1">
+            <bounds x="647" y="125" width="160" height="75"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:Note" id="id-45c9f03305d3f3e93ed9f2a0">
+          <bounds x="10" y="310" width="930" height="120"/>
+          <content>Invariantes que protege:
+• El saldo es la suma de sus movimientos; ningún movimiento se borra
+• Saldo máximo de 200.000 pesos
+• Un solo viaje a crédito y solo en personalizadas
+• Una tarjeta bloqueada no admite débitos ni recargas
+• Bloqueo y traslado solo en personalizadas; el traslado, después de 72 h</content>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-b6caab9a4c2b2ee667c81e7b" fillColor="#BDD7EE" archimateElement="id-e831a57ce67e1adfaf4d22fe">
+          <bounds x="260" y="455" width="210" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-b6e13f8a1b363f56be81c26e" source="id-b6caab9a4c2b2ee667c81e7b" target="id-2ebd69152339d4102ba5f33f" archimateRelationship="id-48ece99641a8f6d45db1cade"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-2ebd69152339d4102ba5f33f" targetConnections="id-b6e13f8a1b363f56be81c26e" fillColor="#FFE699" archimateElement="id-b065cee9a18e0d5f94681ecc">
+          <bounds x="530" y="455" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-40f1cfe0b3444a844eb77ee6" fillColor="#E7E6E6" archimateElement="id-4d45315e78dee31970b54b5f">
+          <bounds x="10" y="540" width="190" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-49ed144f73cc314e41de34a2" source="id-40f1cfe0b3444a844eb77ee6" target="id-c4374289f4cee16303db75f6" archimateRelationship="id-0d2d30e7dfdff625d70fd394"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-c4374289f4cee16303db75f6" targetConnections="id-49ed144f73cc314e41de34a2" fillColor="#BDD7EE" archimateElement="id-bdf5e06518b2a95c1cd81d8f">
+          <bounds x="260" y="540" width="210" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-01519bfb21b571d2938c5865" source="id-c4374289f4cee16303db75f6" target="id-9bb0833475f6bee0f3d3e8ea" archimateRelationship="id-a8560780b838b5cca6be7a66"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-07fcd322318f2000bc8b3a1f" source="id-c4374289f4cee16303db75f6" target="id-0c832486a8697d8da9cb1fdd" archimateRelationship="id-1576ec23a8d41934ed5f012a"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-9bb0833475f6bee0f3d3e8ea" targetConnections="id-01519bfb21b571d2938c5865" fillColor="#FFE699" archimateElement="id-5499f444017a2562febf2a91">
+          <bounds x="530" y="540" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-0c832486a8697d8da9cb1fdd" targetConnections="id-07fcd322318f2000bc8b3a1f" fillColor="#FFE699" archimateElement="id-6a6e3a6eb94daaed258110f6">
+          <bounds x="530" y="610" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-4b11b22c9a162672868aecf6" fillColor="#E7E6E6" archimateElement="id-e9798032707c73d1cf4fb0fc">
+          <bounds x="10" y="695" width="190" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-b56374aeb6cc84bb3fc755e1" source="id-4b11b22c9a162672868aecf6" target="id-5c16e57c372cf9da6a025efd" archimateRelationship="id-d1cf296b8c44958d509c982e"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-5c16e57c372cf9da6a025efd" targetConnections="id-b56374aeb6cc84bb3fc755e1" fillColor="#BDD7EE" archimateElement="id-07fdea1463ad8d4f7e6aad38">
+          <bounds x="260" y="695" width="210" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-f1fdad51e6b9a21627b41446" source="id-5c16e57c372cf9da6a025efd" target="id-fc6d15e046a211f7669c29b2" archimateRelationship="id-15fd157d8275c4310a488d41"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-fce9ea9f589abcf3d6c0957c" source="id-5c16e57c372cf9da6a025efd" target="id-5c187d4bbc48987b70faf14c" archimateRelationship="id-eb6c741f073ee88eede0fded"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-fc6d15e046a211f7669c29b2" targetConnections="id-f1fdad51e6b9a21627b41446" fillColor="#FFE699" archimateElement="id-bfb9817f5bd9c52ab6057783">
+          <bounds x="530" y="695" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-5c187d4bbc48987b70faf14c" targetConnections="id-fce9ea9f589abcf3d6c0957c" fillColor="#FFE699" archimateElement="id-df281b62aaeaef3784010b52">
+          <bounds x="530" y="765" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-5fdb66c4b0face76d5d6229b" fillColor="#BDD7EE" archimateElement="id-4b190b54b80dbfa0a25c024c">
+          <bounds x="260" y="850" width="210" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-31fff8cec43a1dadce5824c5" source="id-5fdb66c4b0face76d5d6229b" target="id-c070e4cf116bc79bb9f24f14" archimateRelationship="id-2cacd249fae7f6cef23664f4"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-c070e4cf116bc79bb9f24f14" targetConnections="id-31fff8cec43a1dadce5824c5" fillColor="#FFE699" archimateElement="id-c7853e57bd59bd39fb89fa44">
+          <bounds x="530" y="850" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-0523585d272f504cd3129622" fillColor="#BDD7EE" archimateElement="id-a13a25f4ce7d7a0a3207fc87">
+          <bounds x="260" y="935" width="210" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-84127586028514a7c5e10bfe" source="id-0523585d272f504cd3129622" target="id-da4ee1d776e8a87bea24797b" archimateRelationship="id-14377c71d231df53ae1261ee"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-da4ee1d776e8a87bea24797b" targetConnections="id-84127586028514a7c5e10bfe" fillColor="#FFE699" archimateElement="id-fbe7fab5f174f64bd14fc742">
+          <bounds x="530" y="935" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-f3bd1ca16c5ffcc6b4e43971" fillColor="#BDD7EE" archimateElement="id-765bb09e218ca3eff6f6b104">
+          <bounds x="260" y="1020" width="210" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-50bd461b3427aab247655fce" source="id-f3bd1ca16c5ffcc6b4e43971" target="id-3e3b198aa549773df4e78434" archimateRelationship="id-a87d7729e5de90c287b7e5ba"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-3e3b198aa549773df4e78434" targetConnections="id-50bd461b3427aab247655fce" fillColor="#FFE699" archimateElement="id-dc5541034d6aa8b02ff4da87">
+          <bounds x="530" y="1020" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-2b3ffadc4df734a3bfe36265" archimateElement="id-7b387ec0bfd722df98dc61bb">
+          <bounds x="970" y="80" width="930" height="220"/>
+          <child xsi:type="archimate:DiagramObject" id="id-a9eaa089abe6b29812e07d4b" fillColor="#B4C7E7" archimateElement="id-da0e1f1d81146e68b1862e75">
+            <bounds x="335" y="35" width="260" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-e6463010d2339ccb2789c7ac" source="id-a9eaa089abe6b29812e07d4b" target="id-8eb4d4922f73a2f791cdd75b" archimateRelationship="id-9c7e1f1852f6d8493681611d"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-6255df895da7bcb7de2eb118" source="id-a9eaa089abe6b29812e07d4b" target="id-d54dffdb8941eef4b5445d2f" archimateRelationship="id-3c0e09f7fc1397a2c3b97173"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-a13dce642562ba4e20755b6a" source="id-a9eaa089abe6b29812e07d4b" target="id-05aafde985c330e0582b7981" archimateRelationship="id-76e59d16e9048c47ef939d45"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-8eb4d4922f73a2f791cdd75b" targetConnections="id-e6463010d2339ccb2789c7ac" archimateElement="id-2c2f8b6867a128701be3bed0">
+            <bounds x="210" y="125" width="160" height="75"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-d54dffdb8941eef4b5445d2f" targetConnections="id-6255df895da7bcb7de2eb118" archimateElement="id-fc376f2ce89c32cac9cd5d9f">
+            <bounds x="385" y="125" width="160" height="75"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-05aafde985c330e0582b7981" targetConnections="id-a13dce642562ba4e20755b6a" archimateElement="id-e36223a528b08deb258dd57f">
+            <bounds x="560" y="125" width="160" height="75"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:Note" id="id-ef807bf8fcd94e4af8046c9b">
+          <bounds x="970" y="310" width="930" height="84"/>
+          <content>Invariantes que protege:
+• Solo datos personales mínimos
+• Sin autorización de tratamiento no se registra (Ley 1581)
+• Un documento, un titular</content>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-a38ee343779989695d0e390a" fillColor="#BDD7EE" archimateElement="id-e25a634a22e51b7afbb6b6f9">
+          <bounds x="1220" y="419" width="210" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-15f52ac0c36b2408bb9a9d77" source="id-a38ee343779989695d0e390a" target="id-07f0fc01b77187838c2a837f" archimateRelationship="id-4f74c99f97a504ee6e631fbd"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-07f0fc01b77187838c2a837f" targetConnections="id-15f52ac0c36b2408bb9a9d77" fillColor="#FFE699" archimateElement="id-81cef739782426059070b971">
+          <bounds x="1490" y="419" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-3678bb35ca1854882d54382d" fillColor="#BDD7EE" archimateElement="id-910b8b7be470c2e038a25eab">
+          <bounds x="1220" y="504" width="210" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-e94e6d3537743f6b68f9917f" source="id-3678bb35ca1854882d54382d" target="id-0e90d8e2ee70dbbccf4b5e3a" archimateRelationship="id-9987398e4ac984abac8438fb"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-0e90d8e2ee70dbbccf4b5e3a" targetConnections="id-e94e6d3537743f6b68f9917f" fillColor="#FFE699" archimateElement="id-73d997e0b7ec646b851131b2">
+          <bounds x="1490" y="504" width="220" height="60"/>
+        </child>
+        <documentation>Agregados del subdominio Tarjetas VAMOS (Soporte): estructura, invariantes y gráfico de comandos y eventos.</documentation>
+      </element>
+      <element xsi:type="archimate:ArchimateDiagramModel" name="V06.4 Agregados, comandos y eventos - Beneficiarios" id="id-9c1ad31f3706d33b01e5075d">
+        <child xsi:type="archimate:Note" id="id-701bba9fa5563f3e32598963">
+          <bounds x="10" y="10" width="1750" height="55"/>
+          <content>V6.4 · SUBDOMINIO BENEFICIARIOS (SOPORTE) — AGREGADOS, COMANDOS Y EVENTOS
+Azul = comando (proceso de aplicación) · Amarillo = evento de dominio (evento de aplicación) · Gris = evento de otro agregado o subdominio que dispara un comando (reacción). Los invariantes están en la nota de cada agregado.</content>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-a635538222d1e9250a1816f5" archimateElement="id-9d15d1679406f2cba7a95a3b">
+          <bounds x="10" y="80" width="930" height="220"/>
+          <child xsi:type="archimate:DiagramObject" id="id-be855d3f9cbde05116cd37eb" fillColor="#B4C7E7" archimateElement="id-caf550be8fc47453bf41d0ec">
+            <bounds x="335" y="35" width="260" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-6bc694ab3ac401e7182028e8" source="id-be855d3f9cbde05116cd37eb" target="id-bd0333e1c12981b01b361899" archimateRelationship="id-8e4008672ac4387885f37e0a"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-95969f1ef49d26fbc696b7b2" source="id-be855d3f9cbde05116cd37eb" target="id-407b235302243c85247767ed" archimateRelationship="id-5502e3728917400905cdfb4c"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-47f78332b5e094c778c8db7b" source="id-be855d3f9cbde05116cd37eb" target="id-59573d8403e6de4979522ec1" archimateRelationship="id-5f33263f9fb6f8bc0dabe475"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-a6cf65f8e466493337e170f1" source="id-be855d3f9cbde05116cd37eb" target="id-699797a41559edaacd863f87" archimateRelationship="id-75713482c2d6394402a637c5"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-f54a2923073eb6e8f711bdd9" source="id-be855d3f9cbde05116cd37eb" target="id-e7e41f7e089f18fa4041e0a5" archimateRelationship="id-185d4e71705c4fc09a07c02d"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-bd0333e1c12981b01b361899" targetConnections="id-6bc694ab3ac401e7182028e8" archimateElement="id-9e741fe3a38f834220ab87b4">
+            <bounds x="35" y="125" width="160" height="75"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-407b235302243c85247767ed" targetConnections="id-95969f1ef49d26fbc696b7b2" archimateElement="id-3bd3fd4e854c8d687939fd28">
+            <bounds x="210" y="125" width="160" height="75"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-59573d8403e6de4979522ec1" targetConnections="id-47f78332b5e094c778c8db7b" archimateElement="id-95ae38169ea7dd6100aa015f">
+            <bounds x="385" y="125" width="160" height="75"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-699797a41559edaacd863f87" targetConnections="id-a6cf65f8e466493337e170f1" archimateElement="id-4a4a358d57723ea251a2bbdf">
+            <bounds x="560" y="125" width="160" height="75"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-e7e41f7e089f18fa4041e0a5" targetConnections="id-f54a2923073eb6e8f711bdd9" archimateElement="id-4f2f84e0711bdccdbb1313d6">
+            <bounds x="735" y="125" width="160" height="75"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:Note" id="id-cb068b2b32ed78e996ad884c">
+          <bounds x="10" y="310" width="930" height="120"/>
+          <content>Invariantes que protege:
+• Exige tarjeta VAMOS personalizada
+• Un titular tiene un solo perfil activo (lo verifica el servicio de aprobación)
+• Cupo usado ≤ cupo mensual; se reinicia el día 1
+• Perfil vencido, suspendido o revocado no da tarifa especial
+• Tras una revocación por fraude, el titular queda inhabilitado 6 meses</content>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-d67eacee21de300412f1ea8b" fillColor="#BDD7EE" archimateElement="id-6ce9674eaeb46479abf49afe">
+          <bounds x="260" y="455" width="210" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-4a0c20a19520826fa42fd943" source="id-d67eacee21de300412f1ea8b" target="id-1b21362c09100a5385530d73" archimateRelationship="id-eabf0c741e9b4c23b586ce7f"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-1b21362c09100a5385530d73" targetConnections="id-4a0c20a19520826fa42fd943" fillColor="#FFE699" archimateElement="id-c1b43709b921f68639b4d216">
+          <bounds x="530" y="455" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-c48940d4611a2284a724ce9f" fillColor="#BDD7EE" archimateElement="id-8131a4c88907ea27d1730abf">
+          <bounds x="260" y="540" width="210" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-4e0c5ad8bdc78c0c9bf6d2db" source="id-c48940d4611a2284a724ce9f" target="id-741d7cc155bbe922ca245b2b" archimateRelationship="id-c4049a4ab855d6b72860b998"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-11cf98a6cc4b5ea256bd5c87" source="id-c48940d4611a2284a724ce9f" target="id-8dbf561ef320e582cbcf1e2e" archimateRelationship="id-97babad46e299cc515291c14"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-741d7cc155bbe922ca245b2b" targetConnections="id-4e0c5ad8bdc78c0c9bf6d2db" fillColor="#FFE699" archimateElement="id-396314ca432dd88181deba38">
+          <bounds x="530" y="540" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-8dbf561ef320e582cbcf1e2e" targetConnections="id-11cf98a6cc4b5ea256bd5c87" fillColor="#FFE699" archimateElement="id-0f474ad18d83139247990f5a">
+          <bounds x="530" y="610" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-18cd57169632d100dbb8f5ad" fillColor="#BDD7EE" archimateElement="id-e7cabcde0af35d82287a35be">
+          <bounds x="260" y="695" width="210" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-b1395cf6b07a6de48bf636af" source="id-18cd57169632d100dbb8f5ad" target="id-85358772e3524f5a9a2c2921" archimateRelationship="id-b6bf5282640171e6d2de9c9b"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-85358772e3524f5a9a2c2921" targetConnections="id-b1395cf6b07a6de48bf636af" fillColor="#FFE699" archimateElement="id-83e8f53128b11922109bbcf4">
+          <bounds x="530" y="695" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-8b3a870dfffbe9eac465984a" fillColor="#E7E6E6" archimateElement="id-e9798032707c73d1cf4fb0fc">
+          <bounds x="10" y="780" width="190" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-20dcfa01fe15b0cbe95af959" source="id-8b3a870dfffbe9eac465984a" target="id-91ee9475b976b39f614c78ac" archimateRelationship="id-4a3b8fb36dbf599d3236c805"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-91ee9475b976b39f614c78ac" targetConnections="id-20dcfa01fe15b0cbe95af959" fillColor="#BDD7EE" archimateElement="id-547823bdfd3b19b366d45251">
+          <bounds x="260" y="780" width="210" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-9db7095631cedb93e9c00afc" source="id-91ee9475b976b39f614c78ac" target="id-4d683f00979f01a994ce364d" archimateRelationship="id-245a3e6b6a909bb369ac7946"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-6d6f55034e0b8535346dee9d" source="id-91ee9475b976b39f614c78ac" target="id-8fd1d8f69ba177785b056f91" archimateRelationship="id-10a0a52887f4c713e75ac81d"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-4d683f00979f01a994ce364d" targetConnections="id-9db7095631cedb93e9c00afc" fillColor="#FFE699" archimateElement="id-5872926cd5cc0e2024479aef">
+          <bounds x="530" y="780" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-8fd1d8f69ba177785b056f91" targetConnections="id-6d6f55034e0b8535346dee9d" fillColor="#FFE699" archimateElement="id-8be166e0bc84899f1bb4e90b">
+          <bounds x="530" y="850" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-29561b21599ed0b65b0969ad" fillColor="#BDD7EE" archimateElement="id-4975b43c87b8277d38ec667e">
+          <bounds x="260" y="935" width="210" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-7eaf78b65cece77bb4be3dbc" source="id-29561b21599ed0b65b0969ad" target="id-6071d2dd6207cd888b7f1e32" archimateRelationship="id-9e9cfc5f19254e164f49b3aa"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-3d044816569847882830c90c" source="id-29561b21599ed0b65b0969ad" target="id-cdc4a355a358a1f45923ff6c" archimateRelationship="id-0668b46ea9a042388c985f1d"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-6071d2dd6207cd888b7f1e32" targetConnections="id-7eaf78b65cece77bb4be3dbc" fillColor="#FFE699" archimateElement="id-6cb8a87ed9b2fd50208dc675">
+          <bounds x="530" y="935" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-cdc4a355a358a1f45923ff6c" targetConnections="id-3d044816569847882830c90c" fillColor="#FFE699" archimateElement="id-aefb7d5a30d8cf75af54c412">
+          <bounds x="530" y="1005" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-962fa83523a6c9e58b64e9c6" fillColor="#BDD7EE" archimateElement="id-3b39b3a44b0a554edd32f4bc">
+          <bounds x="260" y="1090" width="210" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-5983d5ee14766405d75f69b8" source="id-962fa83523a6c9e58b64e9c6" target="id-a262cca827d700cea2dc69e2" archimateRelationship="id-2f055112868e77fb425e3f16"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-a262cca827d700cea2dc69e2" targetConnections="id-5983d5ee14766405d75f69b8" fillColor="#FFE699" archimateElement="id-87a606324a071559b1977b4d">
+          <bounds x="530" y="1090" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-675f32a6a7e0f23137173279" fillColor="#BDD7EE" archimateElement="id-79b9faad5aad796fa4ccf056">
+          <bounds x="260" y="1175" width="210" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-d98fed3785ebdd7f0dfbecc4" source="id-675f32a6a7e0f23137173279" target="id-bcc728b3457d8843588ca1f4" archimateRelationship="id-008f0676af2231084a084c43"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-bcc728b3457d8843588ca1f4" targetConnections="id-d98fed3785ebdd7f0dfbecc4" fillColor="#FFE699" archimateElement="id-5ae2f9f7d1ccb93a439f15c5">
+          <bounds x="530" y="1175" width="220" height="60"/>
+        </child>
+        <documentation>Agregados del subdominio Beneficiarios (Soporte): estructura, invariantes y gráfico de comandos y eventos.</documentation>
+      </element>
+      <element xsi:type="archimate:ArchimateDiagramModel" name="V06.5 Agregados, comandos y eventos - Tarifas" id="id-7a944bf36ad25b5867934e34">
+        <child xsi:type="archimate:Note" id="id-2c2c7582aa4bd3be434d5012">
+          <bounds x="10" y="10" width="1750" height="55"/>
+          <content>V6.5 · SUBDOMINIO TARIFAS (SOPORTE) — AGREGADOS, COMANDOS Y EVENTOS
+Azul = comando (proceso de aplicación) · Amarillo = evento de dominio (evento de aplicación) · Gris = evento de otro agregado o subdominio que dispara un comando (reacción). Los invariantes están en la nota de cada agregado.</content>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-b7286c78c23403e98e3a8e73" archimateElement="id-a226d9ab7a9b56b954729358">
+          <bounds x="10" y="80" width="930" height="220"/>
+          <child xsi:type="archimate:DiagramObject" id="id-f2ae0b174fee7d288c9521fa" fillColor="#B4C7E7" archimateElement="id-6df819fc92c1518c67112d26">
+            <bounds x="335" y="35" width="260" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-0b33d7c1a5a8494dc51e906d" source="id-f2ae0b174fee7d288c9521fa" target="id-64d82b51176910431a02960b" archimateRelationship="id-f299fbf6b68a6b945e69f104"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-edf2296ae133ff0031b373cd" source="id-f2ae0b174fee7d288c9521fa" target="id-5014f2897dadf2c2fe6d98d3" archimateRelationship="id-981db2792e6c63007e316e80"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-d6072f11ca1cdd95c2015d37" source="id-f2ae0b174fee7d288c9521fa" target="id-81061ff5f8fd1fc13c9f56a1" archimateRelationship="id-82026381dce83bc41d97a659"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-f0c38b02e87a4bf30c44fd99" source="id-f2ae0b174fee7d288c9521fa" target="id-901774c4bf38149ff3a1d8e5" archimateRelationship="id-559f0dc13406b640605bf231"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-64d82b51176910431a02960b" targetConnections="id-0b33d7c1a5a8494dc51e906d" archimateElement="id-402fd7113e7f85a9eb855b92">
+            <bounds x="122" y="125" width="160" height="75"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-5014f2897dadf2c2fe6d98d3" targetConnections="id-edf2296ae133ff0031b373cd" archimateElement="id-4d4966f0c4a9641a53d1376d">
+            <bounds x="297" y="125" width="160" height="75"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-81061ff5f8fd1fc13c9f56a1" targetConnections="id-d6072f11ca1cdd95c2015d37" archimateElement="id-f30045211a0ac66752c793c8">
+            <bounds x="472" y="125" width="160" height="75"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-901774c4bf38149ff3a1d8e5" targetConnections="id-f0c38b02e87a4bf30c44fd99" archimateElement="id-a0ba05eceb5e8d9d1e38c487">
+            <bounds x="647" y="125" width="160" height="75"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:Note" id="id-c302eb5eb3a8863fad71792f">
+          <bounds x="10" y="310" width="930" height="102"/>
+          <content>Invariantes que protege:
+• Doble control: quien registra no aprueba
+• Todo perfil tiene tarifa y ninguna supera la tarifa plena
+• Un esquema aprobado no se modifica: se crea una versión nueva
+• Las vigencias no se superponen (lo verifica el servicio de activación)</content>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-c49de8fad2e2657112f8b558" fillColor="#BDD7EE" archimateElement="id-d94579fb1fe81fb1cbd73ea8">
+          <bounds x="260" y="437" width="210" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-2b72467b0b34bbde3504c5f3" source="id-c49de8fad2e2657112f8b558" target="id-2c662583dbcde0cbe68122a3" archimateRelationship="id-ccfaad9993a174454f04d65d"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-2c662583dbcde0cbe68122a3" targetConnections="id-2b72467b0b34bbde3504c5f3" fillColor="#FFE699" archimateElement="id-abb826bda1aabd72b5a93e4d">
+          <bounds x="530" y="437" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-ae5f8ae6340ddf50a1f5ba65" fillColor="#BDD7EE" archimateElement="id-e4aa6b6e30f490a93e8f8b94">
+          <bounds x="260" y="522" width="210" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-f35b5fa0dba6599aed2f8849" source="id-ae5f8ae6340ddf50a1f5ba65" target="id-9dbbe744e1f00416ed3e5b17" archimateRelationship="id-9caefb070de3b53d15919f1f"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-3d12537f53a7897e5cfc5f6a" source="id-ae5f8ae6340ddf50a1f5ba65" target="id-c581aa69454eb8b57ac07955" archimateRelationship="id-ad0adabf74255b1f7a48a385"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-9dbbe744e1f00416ed3e5b17" targetConnections="id-f35b5fa0dba6599aed2f8849" fillColor="#FFE699" archimateElement="id-8a5df7c421bc8e93191ae938">
+          <bounds x="530" y="522" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-c581aa69454eb8b57ac07955" targetConnections="id-3d12537f53a7897e5cfc5f6a" fillColor="#FFE699" archimateElement="id-ca0a81db840b73345c0c89b1">
+          <bounds x="530" y="592" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-fc172583ded92c636b0676a5" fillColor="#BDD7EE" archimateElement="id-9829b404114c090319185dd2">
+          <bounds x="260" y="677" width="210" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-1f2823e3643082fbe3a35e39" source="id-fc172583ded92c636b0676a5" target="id-8a61cc7e93ba8615eae783af" archimateRelationship="id-41610a76479664204235cab3"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-8a61cc7e93ba8615eae783af" targetConnections="id-1f2823e3643082fbe3a35e39" fillColor="#FFE699" archimateElement="id-6ffb1a9ade0de6441605a38d">
+          <bounds x="530" y="677" width="220" height="60"/>
+        </child>
+        <documentation>Agregados del subdominio Tarifas (Soporte): estructura, invariantes y gráfico de comandos y eventos.</documentation>
+      </element>
+      <element xsi:type="archimate:ArchimateDiagramModel" name="V06.6 Agregados, comandos y eventos - Recargas" id="id-82313e4a2d6e72467a9ce87a">
+        <child xsi:type="archimate:Note" id="id-f47ef5d78351afee4eecd2d6">
+          <bounds x="10" y="10" width="1750" height="55"/>
+          <content>V6.6 · SUBDOMINIO RECARGAS (SOPORTE) — AGREGADOS, COMANDOS Y EVENTOS
+Azul = comando (proceso de aplicación) · Amarillo = evento de dominio (evento de aplicación) · Gris = evento de otro agregado o subdominio que dispara un comando (reacción). Los invariantes están en la nota de cada agregado.</content>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-5d6deeec0dfa5642dadad38a" archimateElement="id-4f50dc3111d5bf65ddf44ecd">
+          <bounds x="10" y="80" width="930" height="220"/>
+          <child xsi:type="archimate:DiagramObject" id="id-3c294a9ba960a8db6b59b08c" fillColor="#B4C7E7" archimateElement="id-7467fbeb53e09614924f413d">
+            <bounds x="335" y="35" width="260" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-951f493ba4c863f57c14ee63" source="id-3c294a9ba960a8db6b59b08c" target="id-93460b65aaa3506f4fe44049" archimateRelationship="id-efc7c5b07deb2269b1e569fd"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-aef5b719bfb2fdb9f7d5d2e8" source="id-3c294a9ba960a8db6b59b08c" target="id-2be8445efb0ac45de3ed6019" archimateRelationship="id-a1b398a53c894c2ecb71e9ea"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-23030a7acc9e4aecef7a54be" source="id-3c294a9ba960a8db6b59b08c" target="id-4a4347a1f551d89a31007387" archimateRelationship="id-23eb86c46be1888d768d131d"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-5b826982474dadcd969e6566" source="id-3c294a9ba960a8db6b59b08c" target="id-c7ccb26d5cc013f3e9de672a" archimateRelationship="id-cad44acd477f89ff9a8b384a"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-93460b65aaa3506f4fe44049" targetConnections="id-951f493ba4c863f57c14ee63" archimateElement="id-8c2b6f4eedaeaa7c75429ede">
+            <bounds x="122" y="125" width="160" height="75"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-2be8445efb0ac45de3ed6019" targetConnections="id-aef5b719bfb2fdb9f7d5d2e8" archimateElement="id-b994bcf88df06c73521051d6">
+            <bounds x="297" y="125" width="160" height="75"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-4a4347a1f551d89a31007387" targetConnections="id-23030a7acc9e4aecef7a54be" archimateElement="id-21231bc253738cc9488b6f02">
+            <bounds x="472" y="125" width="160" height="75"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-c7ccb26d5cc013f3e9de672a" targetConnections="id-5b826982474dadcd969e6566" archimateElement="id-c95bdf3b6e7d8f84b6a50394">
+            <bounds x="647" y="125" width="160" height="75"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:Note" id="id-f29fd3fe40dc3c000719b5d1">
+          <bounds x="10" y="310" width="930" height="102"/>
+          <content>Invariantes que protege:
+• Monto entre 2.000 y 100.000 pesos
+• Una referencia de pago genera una sola recarga
+• Solo una recarga confirmada acredita saldo
+• Una recarga conciliada no cambia</content>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-21627b5f0671ffb5a3d93e35" fillColor="#BDD7EE" archimateElement="id-66d84f5aacb9de463bc15679">
+          <bounds x="260" y="437" width="210" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-9d1f4fa2aa71b82a14057de9" source="id-21627b5f0671ffb5a3d93e35" target="id-c705a9e8b9c8701d532c499c" archimateRelationship="id-e458724cc6dfdcd528fd254a"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-c705a9e8b9c8701d532c499c" targetConnections="id-9d1f4fa2aa71b82a14057de9" fillColor="#FFE699" archimateElement="id-8b52e848019fa5ad8a77ea94">
+          <bounds x="530" y="437" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-67b8fe5dbb5211031d40cd28" fillColor="#BDD7EE" archimateElement="id-b715dc5baba9ef434b5f9366">
+          <bounds x="260" y="522" width="210" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-993cd898d8f53a7ef46a6b38" source="id-67b8fe5dbb5211031d40cd28" target="id-52db9f6983f1da69b3d0317a" archimateRelationship="id-615c97785cca433ae8a13e61"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-4116657fa6a69c0d8209bb2d" source="id-67b8fe5dbb5211031d40cd28" target="id-cd270a3475ea901dc5b729c2" archimateRelationship="id-79cbc78fef037e04a6649a10"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-52db9f6983f1da69b3d0317a" targetConnections="id-993cd898d8f53a7ef46a6b38" fillColor="#FFE699" archimateElement="id-4d45315e78dee31970b54b5f">
+          <bounds x="530" y="522" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-cd270a3475ea901dc5b729c2" targetConnections="id-4116657fa6a69c0d8209bb2d" fillColor="#FFE699" archimateElement="id-6bb041588f99cf5fc0b24fce">
+          <bounds x="530" y="592" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-b96e08caf749b1a82da9e3cd" fillColor="#E7E6E6" archimateElement="id-6a6e3a6eb94daaed258110f6">
+          <bounds x="10" y="677" width="190" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-49e4e286be3ebb2cbd0da83e" source="id-b96e08caf749b1a82da9e3cd" target="id-8462c969e5b95c66774397de" archimateRelationship="id-e663e0d8435bd3aae749b789"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-8462c969e5b95c66774397de" targetConnections="id-49e4e286be3ebb2cbd0da83e" fillColor="#BDD7EE" archimateElement="id-b48714d9d61bddb45d8ce44c">
+          <bounds x="260" y="677" width="210" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-3575f40998f201903b4aa57d" source="id-8462c969e5b95c66774397de" target="id-e18c2ce584d7e3baf27572fa" archimateRelationship="id-832ba2a30fb84f429525d362"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-e18c2ce584d7e3baf27572fa" targetConnections="id-3575f40998f201903b4aa57d" fillColor="#FFE699" archimateElement="id-11772c8db70295f2a27cba93">
+          <bounds x="530" y="677" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-9694f58ba022174a95a9404e" fillColor="#BDD7EE" archimateElement="id-1565ad2d7ecd3b8d2817d04a">
+          <bounds x="260" y="762" width="210" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-a0508197d89f190ef3604e4d" source="id-9694f58ba022174a95a9404e" target="id-01d03899187907e5c713f070" archimateRelationship="id-5cd9a6e73ac167bf4c862732"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-35e2b61baa4a847744341d31" source="id-9694f58ba022174a95a9404e" target="id-e54c26a37b40b58c34e61936" archimateRelationship="id-64c7903863cf2c55aea4e83c"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-01d03899187907e5c713f070" targetConnections="id-a0508197d89f190ef3604e4d" fillColor="#FFE699" archimateElement="id-66b4ee3b50f1f3eea85269ef">
+          <bounds x="530" y="762" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-e54c26a37b40b58c34e61936" targetConnections="id-35e2b61baa4a847744341d31" fillColor="#FFE699" archimateElement="id-0ccbcec44a7f1b7acc1cb1b2">
+          <bounds x="530" y="832" width="220" height="60"/>
+        </child>
+        <documentation>Agregados del subdominio Recargas (Soporte): estructura, invariantes y gráfico de comandos y eventos.</documentation>
+      </element>
+      <element xsi:type="archimate:ArchimateDiagramModel" name="V06.7 Agregados, comandos y eventos - Certificación y reportes" id="id-1f614e8be5ffaebfb0a5e0bf">
+        <child xsi:type="archimate:Note" id="id-314ef52ef95789a92f097cb1">
+          <bounds x="10" y="10" width="1750" height="55"/>
+          <content>V6.7 · SUBDOMINIO CERTIFICACIÓN Y REPORTES (SOPORTE) — AGREGADOS, COMANDOS Y EVENTOS
+Azul = comando (proceso de aplicación) · Amarillo = evento de dominio (evento de aplicación) · Gris = evento de otro agregado o subdominio que dispara un comando (reacción). Los invariantes están en la nota de cada agregado.</content>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-8a4df70d73be538587da98ba" archimateElement="id-266a0d1e9adc0aabd5f6fcd4">
+          <bounds x="10" y="80" width="930" height="220"/>
+          <child xsi:type="archimate:DiagramObject" id="id-ab6a055c9bdf28a86ce1d405" fillColor="#B4C7E7" archimateElement="id-8319f143f4ab447f0f6fc5b3">
+            <bounds x="335" y="35" width="260" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-289f4fbdf4e6776e6ac4009a" source="id-ab6a055c9bdf28a86ce1d405" target="id-8c7aeea095105601186afdae" archimateRelationship="id-4f252e8c4ab1dee89f5edc83"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-15c9c6d28930fae8ef171778" source="id-ab6a055c9bdf28a86ce1d405" target="id-c14941bf4cb2c08c656fa175" archimateRelationship="id-dd6f01cd619ac7fa1eab9f6f"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-6b3e9922b7349da3311d3bcc" source="id-ab6a055c9bdf28a86ce1d405" target="id-7db03c9050b9a04449426ad2" archimateRelationship="id-077093a4d53983abca4f95f8"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-8c7aeea095105601186afdae" targetConnections="id-289f4fbdf4e6776e6ac4009a" archimateElement="id-0e6357518ec58bcac1f29dd0">
+            <bounds x="210" y="125" width="160" height="75"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-c14941bf4cb2c08c656fa175" targetConnections="id-15c9c6d28930fae8ef171778" archimateElement="id-2a6852588be0d9153f2e159c">
+            <bounds x="385" y="125" width="160" height="75"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-7db03c9050b9a04449426ad2" targetConnections="id-6b3e9922b7349da3311d3bcc" archimateElement="id-bad2d13cd1db739f9a67e0d0">
+            <bounds x="560" y="125" width="160" height="75"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:Note" id="id-4f6d137d5daf2ee897a81e63">
+          <bounds x="10" y="310" width="930" height="84"/>
+          <content>Invariantes que protege:
+• Solo se genera con todos los días del periodo en cierre definitivo
+• Una certificación emitida no se modifica: se reemplaza por otra
+• Cada cifra es trazable a sus validaciones</content>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-cf5d694301e109af3b1a4296" fillColor="#E7E6E6" archimateElement="id-150c959ce60f8327703afab7">
+          <bounds x="10" y="419" width="190" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-2fbca3f0f217cc24fee7165b" source="id-cf5d694301e109af3b1a4296" target="id-d49afdde7ffb691e3510c588" archimateRelationship="id-5d5a23693363af066636236b"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-3f0661925a50b03a2e5eaeff" source="id-cf5d694301e109af3b1a4296" target="id-deecc2696ee8e7dbd2c6b3c1" archimateRelationship="id-7e425aa2c85161eb31f11a6f">
+            <bendpoint startX="584" startY="-48" endX="-636" endY="-30"/>
+          </sourceConnection>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-d49afdde7ffb691e3510c588" targetConnections="id-2fbca3f0f217cc24fee7165b id-c693b77f81f3ec2c96b55133" fillColor="#BDD7EE" archimateElement="id-794b6da1ccd1889f431090fd">
+          <bounds x="260" y="419" width="210" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-a52f5563a28ca533fd5b945a" source="id-d49afdde7ffb691e3510c588" target="id-78429e11df75d59d86e89c27" archimateRelationship="id-e00512d2e80c755cf8003a64"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-78429e11df75d59d86e89c27" targetConnections="id-a52f5563a28ca533fd5b945a" fillColor="#FFE699" archimateElement="id-8c5f12be3086a52de6414cf3">
+          <bounds x="530" y="419" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-71213978b71ef18828818daa" fillColor="#BDD7EE" archimateElement="id-5a3c35e23005f3741421f651">
+          <bounds x="260" y="504" width="210" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-77f9268c5f45c1fc68e067d9" source="id-71213978b71ef18828818daa" target="id-94c9fd9cad669272058b3dbe" archimateRelationship="id-d9174345c86c43cfea993870"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-94c9fd9cad669272058b3dbe" targetConnections="id-77f9268c5f45c1fc68e067d9" fillColor="#FFE699" archimateElement="id-0e83e5e95ab086d8245d09bf">
+          <bounds x="530" y="504" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-827cab2fef07e35c4dda8464" fillColor="#BDD7EE" archimateElement="id-737c9cbb05fb1d8880a1bd88">
+          <bounds x="260" y="589" width="210" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-fc469a876af7e5ebbefcb4af" source="id-827cab2fef07e35c4dda8464" target="id-0fd10504f9c6c1fb22128023" archimateRelationship="id-956637080a1af7ee82d709ef"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-0fd10504f9c6c1fb22128023" targetConnections="id-fc469a876af7e5ebbefcb4af" fillColor="#FFE699" archimateElement="id-bdaf5bf5f5588f06a6df74c8">
+          <bounds x="530" y="589" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-9bd375a7a90da23258516c66" archimateElement="id-200f1217f644cc5ac40d3075">
+          <bounds x="970" y="80" width="930" height="220"/>
+          <child xsi:type="archimate:DiagramObject" id="id-96de59ae7517e9af5121cd28" fillColor="#B4C7E7" archimateElement="id-db2891dd15e2c3a985075f29">
+            <bounds x="335" y="35" width="260" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-e303a8018625b3cbc7fb2ab9" source="id-96de59ae7517e9af5121cd28" target="id-352fbb7b9860a766ef2c88fe" archimateRelationship="id-807b9f9193aabdd379a03e5b"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-cffcdfd66a0bd18342f84353" source="id-96de59ae7517e9af5121cd28" target="id-b4a006b478941ff4be5bcf98" archimateRelationship="id-14833d9b1dde58547e34ea16"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-352fbb7b9860a766ef2c88fe" targetConnections="id-e303a8018625b3cbc7fb2ab9" archimateElement="id-37b7b3ee11f061095b02a24e">
+            <bounds x="297" y="125" width="160" height="75"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-b4a006b478941ff4be5bcf98" targetConnections="id-cffcdfd66a0bd18342f84353" archimateElement="id-b90216bf21d00d207a1b84d4">
+            <bounds x="472" y="125" width="160" height="75"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:Note" id="id-6f1b3a637c9662e0406a3478">
+          <bounds x="970" y="310" width="930" height="66"/>
+          <content>Invariantes que protege:
+• Se genera solo desde el consolidado definitivo
+• Se conserva la evidencia de envío</content>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-021a53fd0491ae456f1d4e39" fillColor="#E7E6E6" archimateElement="id-150c959ce60f8327703afab7">
+          <bounds x="924" y="427" width="190" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-c693b77f81f3ec2c96b55133" source="id-021a53fd0491ae456f1d4e39" target="id-d49afdde7ffb691e3510c588" archimateRelationship="id-5d5a23693363af066636236b">
+            <bendpoint startX="-208" startY="66" endX="492" endY="48"/>
+          </sourceConnection>
+          <sourceConnection xsi:type="archimate:Connection" id="id-18883ebf96a1bbef97e95ebf" source="id-021a53fd0491ae456f1d4e39" target="id-deecc2696ee8e7dbd2c6b3c1" archimateRelationship="id-7e425aa2c85161eb31f11a6f"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-deecc2696ee8e7dbd2c6b3c1" targetConnections="id-3f0661925a50b03a2e5eaeff id-18883ebf96a1bbef97e95ebf" fillColor="#BDD7EE" archimateElement="id-9d3994e060a06b0e925f1451">
+          <bounds x="1220" y="401" width="210" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-3b89644348ab5a83ec9e05be" source="id-deecc2696ee8e7dbd2c6b3c1" target="id-4a41a8919154a42aa92772ca" archimateRelationship="id-64265b644445d0fb27a62789"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-4a41a8919154a42aa92772ca" targetConnections="id-3b89644348ab5a83ec9e05be" fillColor="#FFE699" archimateElement="id-0657d7fc30a31d8e8fcb2e26">
+          <bounds x="1490" y="401" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-747f7a0b6b4ad67e9815d38f" fillColor="#BDD7EE" archimateElement="id-277949f966da890fff180f0b">
+          <bounds x="1220" y="486" width="210" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-d6b1b4fff81751ac1796a6ed" source="id-747f7a0b6b4ad67e9815d38f" target="id-b20d8897a1f314cdd42c8f03" archimateRelationship="id-8b2c444cef3063b2a4bfc715"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-b20d8897a1f314cdd42c8f03" targetConnections="id-d6b1b4fff81751ac1796a6ed" fillColor="#FFE699" archimateElement="id-0f63deec6c59bda24e9f8d0d">
+          <bounds x="1490" y="486" width="220" height="60"/>
+        </child>
+        <documentation>Agregados del subdominio Certificación y reportes (Soporte): estructura, invariantes y gráfico de comandos y eventos.</documentation>
+      </element>
+      <element xsi:type="archimate:ArchimateDiagramModel" name="V06.8 Agregados, comandos y eventos - Pago bancario" id="id-877c063c5d576f8e177972b7">
+        <child xsi:type="archimate:Note" id="id-6a002a8a4babaa3f00157ba1">
+          <bounds x="10" y="10" width="1750" height="55"/>
+          <content>V6.8 · SUBDOMINIO PAGO BANCARIO (GENÉRICO) — AGREGADOS, COMANDOS Y EVENTOS
+Azul = comando (proceso de aplicación) · Amarillo = evento de dominio (evento de aplicación) · Gris = evento de otro agregado o subdominio que dispara un comando (reacción). Los invariantes están en la nota de cada agregado.</content>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-48d67222c3c303d54b8fdcc0" archimateElement="id-fea2529f797c7af3a090fbc0">
+          <bounds x="10" y="80" width="930" height="220"/>
+          <child xsi:type="archimate:DiagramObject" id="id-b0cadfdb6f8d1a4f9c8f5b24" fillColor="#B4C7E7" archimateElement="id-91c32975ff51c76ff8951c1d">
+            <bounds x="335" y="35" width="260" height="55"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-51a20318c0ec87ba9742faff" source="id-b0cadfdb6f8d1a4f9c8f5b24" target="id-a4738980477ad3ad78e6f9f0" archimateRelationship="id-ecb6348d60ba0ffdf1b6c722"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-b2922c67445c3292711ca028" source="id-b0cadfdb6f8d1a4f9c8f5b24" target="id-1a7ac5b980218f69a690d5c9" archimateRelationship="id-1dc0979add5ec0163bae49b4"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-496d50e296da4ac61a4d7d98" source="id-b0cadfdb6f8d1a4f9c8f5b24" target="id-0ea73dfd1116cc06ba7ab7e6" archimateRelationship="id-789cafb09a3ef83d5ae8b3e2"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-f92ba26fb8f720f7ac91867f" source="id-b0cadfdb6f8d1a4f9c8f5b24" target="id-fd40886eaa9080b89d65339a" archimateRelationship="id-21e21be23d630e8c9ea9dd2d"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-a4738980477ad3ad78e6f9f0" targetConnections="id-51a20318c0ec87ba9742faff" archimateElement="id-c11a9b72ee5055fc0a997712">
+            <bounds x="122" y="125" width="160" height="75"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-1a7ac5b980218f69a690d5c9" targetConnections="id-b2922c67445c3292711ca028" archimateElement="id-a9ea0531637803f6e6611bec">
+            <bounds x="297" y="125" width="160" height="75"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-0ea73dfd1116cc06ba7ab7e6" targetConnections="id-496d50e296da4ac61a4d7d98" archimateElement="id-015f7721677ec910cd23ffaf">
+            <bounds x="472" y="125" width="160" height="75"/>
+          </child>
+          <child xsi:type="archimate:DiagramObject" id="id-fd40886eaa9080b89d65339a" targetConnections="id-f92ba26fb8f720f7ac91867f" archimateElement="id-f6c453b9c27fbcf0ee103d68">
+            <bounds x="647" y="125" width="160" height="75"/>
+          </child>
+        </child>
+        <child xsi:type="archimate:Note" id="id-e5726d0ed1dc10ae686981c2">
+          <bounds x="10" y="310" width="930" height="102"/>
+          <content>Invariantes que protege:
+• Nunca se guarda el número de la tarjeta, solo el token
+• Un solo cobro por token y día
+• Con deuda, el token está en la lista de denegación y no valida
+• Máximo 3 reintentos en 10 días; después la pérdida se registra</content>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-2d6228d16395c34e8665558d" fillColor="#E7E6E6" archimateElement="id-e9798032707c73d1cf4fb0fc">
+          <bounds x="10" y="437" width="190" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-6727fb8d2ba3889af5f1f04f" source="id-2d6228d16395c34e8665558d" target="id-721494bd0a517dacd373ee1c" archimateRelationship="id-b10f40cc12fdb3c9e06e51d4"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-721494bd0a517dacd373ee1c" targetConnections="id-6727fb8d2ba3889af5f1f04f" fillColor="#BDD7EE" archimateElement="id-7a8699a536bcb3d6dddb048c">
+          <bounds x="260" y="437" width="210" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-a7ce7041a692665769178a5a" source="id-721494bd0a517dacd373ee1c" target="id-3516bb1f6180f5a37ebeaf8c" archimateRelationship="id-eb979fdb6ee9915a7197d97d"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-3516bb1f6180f5a37ebeaf8c" targetConnections="id-a7ce7041a692665769178a5a" fillColor="#FFE699" archimateElement="id-11f6e36f121f34bb334d1d39">
+          <bounds x="530" y="437" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-00332a8cfa43973c6333eef9" fillColor="#BDD7EE" archimateElement="id-47ec286d7f805890872cf4ed">
+          <bounds x="260" y="522" width="210" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-d2b5f77ea57d9d7bebf838e2" source="id-00332a8cfa43973c6333eef9" target="id-e0c9c81c8021f329e9c221c0" archimateRelationship="id-57c1a167503f976d2680b790"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-e0c9c81c8021f329e9c221c0" targetConnections="id-d2b5f77ea57d9d7bebf838e2" fillColor="#FFE699" archimateElement="id-754ba3ffd47792759ec9e5c5">
+          <bounds x="530" y="522" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-3f0291d6b0d730829713866f" fillColor="#BDD7EE" archimateElement="id-df318d5e3e48ec89d9662e8b">
+          <bounds x="260" y="607" width="210" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-4fff25f22cdbd27f995b6f09" source="id-3f0291d6b0d730829713866f" target="id-e963b187d8ef47563fad97ea" archimateRelationship="id-5c95d851685aeb230a606c0b"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-0f6b9aaacf0a4180b55df3ad" source="id-3f0291d6b0d730829713866f" target="id-0549930a7919926f4304f164" archimateRelationship="id-eae49c16271e789c009a4e6b"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-e963b187d8ef47563fad97ea" targetConnections="id-4fff25f22cdbd27f995b6f09" fillColor="#FFE699" archimateElement="id-31adcd4b5d7bb03d843b9d1f">
+          <bounds x="530" y="607" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-0549930a7919926f4304f164" targetConnections="id-0f6b9aaacf0a4180b55df3ad" fillColor="#FFE699" archimateElement="id-d9ce03d4e5e599ae32ff4242">
+          <bounds x="530" y="677" width="220" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-a5dc0519199b28a90fe96800" source="id-0549930a7919926f4304f164" target="id-a7f2ac7089a7607c1bcf367b" archimateRelationship="id-0188bcbfe64f8b068057ccd1"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-a7f2ac7089a7607c1bcf367b" targetConnections="id-a5dc0519199b28a90fe96800" fillColor="#BDD7EE" archimateElement="id-6f3c4017862854744ecc980e">
+          <bounds x="260" y="762" width="210" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-f910b26b2449a8023376bdf6" source="id-a7f2ac7089a7607c1bcf367b" target="id-fdc817f6c9446928590b71ba" archimateRelationship="id-4964e37444dd6d43447dfc67"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-7d2be8dbd3392461fd6c9b98" source="id-a7f2ac7089a7607c1bcf367b" target="id-b16613f1d41133ade0788c2a" archimateRelationship="id-d510b1baf69a6baf603bbe90"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-fdc817f6c9446928590b71ba" targetConnections="id-f910b26b2449a8023376bdf6" fillColor="#FFE699" archimateElement="id-1108fc57cdedc8f9b5b0b29e">
+          <bounds x="530" y="762" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-b16613f1d41133ade0788c2a" targetConnections="id-7d2be8dbd3392461fd6c9b98" fillColor="#FFE699" archimateElement="id-3891a82f2f1ea7fb81f870d6">
+          <bounds x="530" y="832" width="220" height="60"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-5cc887435c56d884dd0c3bb9" fillColor="#BDD7EE" archimateElement="id-91b95bcb33f9bda9fdfd1b83">
+          <bounds x="260" y="917" width="210" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-e4f15b555b725afdc1c29d2b" source="id-5cc887435c56d884dd0c3bb9" target="id-b62d557397b3b6c9bf761ea8" archimateRelationship="id-ccc40f5ca9db1475580ddb97"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="id-b62d557397b3b6c9bf761ea8" targetConnections="id-e4f15b555b725afdc1c29d2b" fillColor="#FFE699" archimateElement="id-a5b116c2f6c9766d13b8aa05">
+          <bounds x="530" y="917" width="220" height="60"/>
+        </child>
+        <documentation>Agregados del subdominio Pago bancario (Genérico): estructura, invariantes y gráfico de comandos y eventos.</documentation>
+      </element>
     </folder>
     <element xsi:type="archimate:ArchimateDiagramModel" name="V01 Motivación" id="id-9e779f3f0bd087e97c3a331b">
       <child xsi:type="archimate:Note" id="id-8df8a96335922ec09710163d">
@@ -5386,7 +5959,7 @@ Amarillo intenso = paso soportado por la aplicación · Gris = fuera de la aplic
       </child>
       <documentation>Dónde se ubica la aplicación: cadena de valor de 5 etapas y proceso de recaudo de punta a punta (11 pasos) con sus actores.</documentation>
     </element>
-    <element xsi:type="archimate:ArchimateDiagramModel" name="V05 Dominios" id="id-25da5c64d9efaa5017c65a42">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="V05 Dominios" id="id-25da5c64d9efaa5017c65a42" viewpoint="goal_realization">
       <child xsi:type="archimate:Note" id="id-03dea92cce9850991db310e3">
         <bounds x="10" y="10" width="1500" height="65"/>
         <content>V5 · SUBDOMINIOS DEL RECAUDO Y SU CLASIFICACIÓN
