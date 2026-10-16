@@ -2276,13 +2276,13 @@ Estilo: Asíncrono</documentation>
   </folder>
   <folder name="Implementation &amp; Migration" id="id-5f3c96b56eb9cdd93f85cd52" type="implementation_migration"/>
   <folder name="Other" id="id-41fedbf6e6ccea2b348a7996" type="other">
-    <element xsi:type="archimate:Grouping" name="Capa 1: Proceso de negocio de punta a punta" id="id-68ba22ffb564e60f1b28a8aa"/>
-    <element xsi:type="archimate:Grouping" name="Capa 2: Servicios de negocio de plataforma" id="id-a95a23a651f55afd805cb2fc"/>
-    <element xsi:type="archimate:Grouping" name="Capa 3: Servicios de dominio" id="id-377937a23b9b8002ffc30843"/>
-    <element xsi:type="archimate:Grouping" name="Capa 4: Servicios básicos de los subdominios foco" id="id-77fdf539d8a5700d78b26051"/>
-    <element xsi:type="archimate:Grouping" name="Capa 5: Servicios de la capa anticorrupción (interoperabilidad)" id="id-c61fcd349c2e09eab7395669"/>
-    <element xsi:type="archimate:Grouping" name="Capa 6: Servicios de subdominio fundamental (datos maestros)" id="id-b89469a017adc1593677d1fb"/>
-    <element xsi:type="archimate:Grouping" name="Capa 7: Servicios de infraestructura" id="id-b77dcede9061af8e637350a9"/>
+    <element xsi:type="archimate:Grouping" name="Capa 1 · Proceso de negocio de punta a punta" id="id-68ba22ffb564e60f1b28a8aa"/>
+    <element xsi:type="archimate:Grouping" name="Capa 2 · Servicios de negocio de plataforma" id="id-a95a23a651f55afd805cb2fc"/>
+    <element xsi:type="archimate:Grouping" name="Capa 3 · Servicios de dominio" id="id-377937a23b9b8002ffc30843"/>
+    <element xsi:type="archimate:Grouping" name="Capa 4 · Servicios básicos de los subdominios foco" id="id-77fdf539d8a5700d78b26051"/>
+    <element xsi:type="archimate:Grouping" name="Capa 5 · Servicios de la capa anticorrupción (interoperabilidad)" id="id-c61fcd349c2e09eab7395669"/>
+    <element xsi:type="archimate:Grouping" name="Capa 6 · Servicios de subdominio fundamental (datos maestros)" id="id-b89469a017adc1593677d1fb"/>
+    <element xsi:type="archimate:Grouping" name="Capa 7 · Servicios de infraestructura" id="id-b77dcede9061af8e637350a9"/>
     <element xsi:type="archimate:Grouping" name="Gestión tarifaria · SOPORTE" id="id-0b2d03b2b599e11efa878368">
       <documentation>Mantiene y versiona el esquema que aplica Validaciones; cambia una vez al año por decreto y exige doble control. Es la configuración del core, no el core</documentation>
       <property key="clasificacion" value="Soporte"/>
@@ -3284,7 +3284,7 @@ Invariantes:
     <element xsi:type="archimate:ServingRelationship" name="OHS/PL → CS" id="id-e3be1d0460b2479d762ed1cb" source="id-758a9e89ff92726311fc6476" target="id-71448c3cdb388253b901c50e"/>
     <element xsi:type="archimate:ServingRelationship" name="OHS/PL → CS" id="id-6e7a4b3f8e587cbd27bdc69b" source="id-71448c3cdb388253b901c50e" target="id-e78a83805c28bdc042e012b8"/>
     <element xsi:type="archimate:ServingRelationship" name="OHS/PL → CS" id="id-a6b28578a8c8dd15105cd0df" source="id-64a453a9406f29d8959546e7" target="id-71448c3cdb388253b901c50e"/>
-    <element xsi:type="archimate:AssociationRelationship" name="P (asociación)" id="id-fe78261a317cbd2b2f280f4c" source="id-64a453a9406f29d8959546e7" target="id-3d23fdf30e2170f94c0bfce2"/>
+    <element xsi:type="archimate:AssociationRelationship" name="A" id="id-fe78261a317cbd2b2f280f4c" source="id-64a453a9406f29d8959546e7" target="id-3d23fdf30e2170f94c0bfce2"/>
     <element xsi:type="archimate:ServingRelationship" name="U → ACL" id="id-3901049ba1e88be5e65f50f0" source="id-12a719ea54f6e98ceafa9dae" target="id-acfc3c1edac3ccb8e67a11e1"/>
     <element xsi:type="archimate:ServingRelationship" name="OHS/PL → CF" id="id-4b6a9cca6741247c9aef4866" source="id-3d23fdf30e2170f94c0bfce2" target="id-12a719ea54f6e98ceafa9dae"/>
     <element xsi:type="archimate:ServingRelationship" name="OHS/PL → CF" id="id-4ac34e3339aa70ff03fe0017" source="id-32cc1fbbfe65fcd5381c12ef" target="id-12a719ea54f6e98ceafa9dae"/>
@@ -3400,8 +3400,8 @@ Invariantes:
       <element xsi:type="archimate:ArchimateDiagramModel" name="V04 Descomposición de servicios" id="id-33489fe04edb37cd0d259bad">
         <child xsi:type="archimate:Note" id="id-220af61744f45a8e8860cdb4">
           <bounds x="10" y="10" width="1500" height="55"/>
-          <content>V4: DESCOMPOSICIÓN DEL PROCESO DE RECAUDO EN SIETE CAPAS DE SERVICIO (jerarquía de servicios)
-Amarillo = servicio incluido, Gris = excluido (justificación en la tabla de inclusión y exclusión), Naranja = servicio de la capa anticorrupción. Las capas inferiores sirven a las superiores (relaciones en el modelo y en V10).</content>
+          <content>V4 · DESCOMPOSICIÓN DEL PROCESO DE RECAUDO EN SIETE CAPAS DE SERVICIO (jerarquía de servicios del curso)
+Amarillo = servicio incluido · Gris = excluido (justificación en la tabla de inclusión y exclusión) · Naranja = servicio de la capa anticorrupción. Las capas inferiores sirven a las superiores (relaciones en el modelo y en V10).</content>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-f51dea338514d20f61e8bb5e" archimateElement="id-68ba22ffb564e60f1b28a8aa">
           <bounds x="10" y="80" width="1980" height="120"/>
@@ -3588,8 +3588,8 @@ Amarillo = servicio incluido, Gris = excluido (justificación en la tabla de inc
       <element xsi:type="archimate:ArchimateDiagramModel" name="V04b Capa anticorrupción - servicios externos" id="id-9faad7c578c50f53ca405102">
         <child xsi:type="archimate:Note" id="id-540637433da04efdb6460c96">
           <bounds x="10" y="10" width="1500" height="55"/>
-          <content>V4b: CAPA ANTICORRUPCIÓN: CON QUIÉN SE INTERCAMBIA INFORMACIÓN Y EN QUÉ DIRECCIÓN
-Cada flecha es un flujo con la información que viaja, el sentido de la flecha es la dirección. Detalle de frecuencia y formato en la tabla de externos del README.</content>
+          <content>V4b · CAPA ANTICORRUPCIÓN: CON QUIÉN SE INTERCAMBIA INFORMACIÓN Y EN QUÉ DIRECCIÓN
+Cada flecha es un flujo con la información que viaja; el sentido de la flecha es la dirección. Detalle de frecuencia y formato en la tabla de externos del README.</content>
         </child>
         <child xsi:type="archimate:Group" id="id-916862f1f40ec8099203d082">
           <bounds x="10" y="80" width="960" height="135"/>
@@ -3627,9 +3627,7 @@ Cada flecha es un flujo con la información que viaja, el sentido de la flecha e
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-da0b99f3f92b8b99ded2c82a" targetConnections="id-0f417d5fddf9040358c429ff" archimateElement="id-6ff3a3e40053674c1b8b8033">
             <bounds x="680" y="30" width="260" height="60"/>
-            <sourceConnection xsi:type="archimate:Connection" id="id-5e4a1dbf4b724beeea2dd644" source="id-da0b99f3f92b8b99ded2c82a" target="id-ed268949cc1520fa3f2d1d2a" archimateRelationship="id-2c4c2075efe91acddc73f60e">
-              <bendpoint startX="-340" startY="49" endX="336" endY="-17"/>
-            </sourceConnection>
+            <sourceConnection xsi:type="archimate:Connection" id="id-5e4a1dbf4b724beeea2dd644" source="id-da0b99f3f92b8b99ded2c82a" target="id-ed268949cc1520fa3f2d1d2a" archimateRelationship="id-2c4c2075efe91acddc73f60e"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-832dd0a0b90ad852ecc76d25" archimateElement="id-e5c90c35b1309ea5f7d53398">
             <bounds x="680" y="125" width="260" height="60"/>
@@ -3709,7 +3707,7 @@ Cada flecha es un flujo con la información que viaja, el sentido de la flecha e
           <child xsi:type="archimate:DiagramObject" id="id-a464e98944b66d8909bac740" targetConnections="id-440caebc22ca36b8860402d7" fillColor="#FCE4D6" archimateElement="id-ee0ac45b3f4b103469c407cc">
             <bounds x="20" y="190" width="230" height="65"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-e768fc51c52c9d153e078883" source="id-a464e98944b66d8909bac740" target="id-f347f0d419c6da488753fa8d" archimateRelationship="id-781e6f38c842cc7a2ddbbbda">
-              <bendpoint startX="94" startY="-155" endX="-581" endY="7"/>
+              <bendpoint startX="330" startY="-110" endX="-345" endY="52"/>
             </sourceConnection>
             <sourceConnection xsi:type="archimate:Connection" id="id-d6914bc6511f3f87b6a18b39" source="id-a464e98944b66d8909bac740" target="id-7f487b045fa4728229545c5b" archimateRelationship="id-2710ea5f9e1c54a837702378"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-76ad6a4f0aca8bb395071138" source="id-a464e98944b66d8909bac740" target="id-0df47fb73cdc6fde501475d4" archimateRelationship="id-8f24253559cc6954fa4e295f"/>
@@ -3717,12 +3715,7 @@ Cada flecha es un flujo con la información que viaja, el sentido de la flecha e
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-f347f0d419c6da488753fa8d" targetConnections="id-e768fc51c52c9d153e078883" archimateElement="id-b97a1a4e0c62c7d1e519bfc7">
             <bounds x="680" y="30" width="260" height="60"/>
-            <sourceConnection xsi:type="archimate:Connection" id="id-440caebc22ca36b8860402d7" source="id-f347f0d419c6da488753fa8d" target="id-a464e98944b66d8909bac740" archimateRelationship="id-fbedd217ec183fe8de9bdd92">
-              <bendpoint startX="-177" startY="26" endX="498" endY="-136"/>
-              <bendpoint startX="-177" startY="64" endX="498" endY="-98"/>
-              <bendpoint startX="-245" startY="64" endX="430" endY="-98"/>
-              <bendpoint startX="-552" startY="64" endX="123" endY="-98"/>
-            </sourceConnection>
+            <sourceConnection xsi:type="archimate:Connection" id="id-440caebc22ca36b8860402d7" source="id-f347f0d419c6da488753fa8d" target="id-a464e98944b66d8909bac740" archimateRelationship="id-fbedd217ec183fe8de9bdd92"/>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-7f487b045fa4728229545c5b" targetConnections="id-d6914bc6511f3f87b6a18b39" archimateElement="id-2f9c9c8e9a95da7905449f91">
             <bounds x="680" y="125" width="260" height="60"/>
@@ -3749,10 +3742,10 @@ Cada flecha es un flujo con la información que viaja, el sentido de la flecha e
       <element xsi:type="archimate:ArchimateDiagramModel" name="V04c Contratos de servicio (Contract First)" id="id-a37c58cc1455a0b18cd3cac4">
         <child xsi:type="archimate:Note" id="id-3a9b0706f9228b2ec6b174ab">
           <bounds x="10" y="10" width="1200" height="55"/>
-          <content>V4c: CONTRACT FIRST: UN CONTRATO POR CADA SERVICIO INCLUIDO DE TAMAÑO FINAL
+          <content>V4c · CONTRACT FIRST: UN CONTRATO POR CADA SERVICIO INCLUIDO DE TAMAÑO FINAL
 El detalle de cada contrato está en su documentación (pestaña Properties en Archi) y en la sección 4 del README.</content>
         </child>
-        <child xsi:type="archimate:Group" id="id-e6909bcbe1bc46a47db9b473" name="Capa 3: Servicios de dominio" textAlignment="1">
+        <child xsi:type="archimate:Group" id="id-e6909bcbe1bc46a47db9b473" name="Capa 3 · Servicios de dominio">
           <bounds x="10" y="80" width="1290" height="200"/>
           <child xsi:type="archimate:DiagramObject" id="id-86dd4824cfb42666b246fc78" archimateElement="id-ff77da031f7215c22abbc4fe">
             <bounds x="15" y="32" width="185" height="65"/>
@@ -3797,7 +3790,7 @@ El detalle de cada contrato está en su documentación (pestaña Properties en A
             <bounds x="1080" y="112" width="185" height="65"/>
           </child>
         </child>
-        <child xsi:type="archimate:Group" id="id-579c505e657203912b0737da" name="Capa 4: Servicios básicos de los subdominios foco" textAlignment="1">
+        <child xsi:type="archimate:Group" id="id-579c505e657203912b0737da" name="Capa 4 · Servicios básicos de los subdominios foco">
           <bounds x="10" y="295" width="1290" height="280"/>
           <child xsi:type="archimate:DiagramObject" id="id-a022febe1b672b4315d52ae2" archimateElement="id-eb05356d6ef319d023aa21d5">
             <bounds x="15" y="32" width="185" height="65"/>
@@ -3863,7 +3856,7 @@ El detalle de cada contrato está en su documentación (pestaña Properties en A
             <bounds x="1080" y="192" width="185" height="65"/>
           </child>
         </child>
-        <child xsi:type="archimate:Group" id="id-4749864882482fefa0d16440" name="Capa 5: Servicios de la capa anticorrupción (interoperabilidad)" textAlignment="1">
+        <child xsi:type="archimate:Group" id="id-4749864882482fefa0d16440" name="Capa 5 · Servicios de la capa anticorrupción (interoperabilidad)">
           <bounds x="10" y="590" width="1290" height="360"/>
           <child xsi:type="archimate:DiagramObject" id="id-7a83fc6ef90dc9f9e4abc7b4" fillColor="#FCE4D6" archimateElement="id-0b9b2b38d97a535af9cdd80a">
             <bounds x="15" y="32" width="185" height="65"/>
@@ -3936,7 +3929,7 @@ El detalle de cada contrato está en su documentación (pestaña Properties en A
             <bounds x="230" y="272" width="185" height="65"/>
           </child>
         </child>
-        <child xsi:type="archimate:Group" id="id-ece881ff30c608c6dac2986f" name="Capa 6: Servicios de subdominio fundamental (datos maestros)" textAlignment="1">
+        <child xsi:type="archimate:Group" id="id-ece881ff30c608c6dac2986f" name="Capa 6 · Servicios de subdominio fundamental (datos maestros)">
           <bounds x="10" y="965" width="1290" height="120"/>
           <child xsi:type="archimate:DiagramObject" id="id-9e6670869732bb837079e68c" archimateElement="id-4ccaf93679b2269af6972a9d">
             <bounds x="15" y="32" width="185" height="65"/>
@@ -3960,7 +3953,7 @@ El detalle de cada contrato está en su documentación (pestaña Properties en A
             <bounds x="1080" y="32" width="185" height="65"/>
           </child>
         </child>
-        <child xsi:type="archimate:Group" id="id-88034000b23f477bc113e7c6" name="Capa 7: Servicios de infraestructura" textAlignment="1">
+        <child xsi:type="archimate:Group" id="id-88034000b23f477bc113e7c6" name="Capa 7 · Servicios de infraestructura">
           <bounds x="10" y="1100" width="1290" height="120"/>
           <child xsi:type="archimate:DiagramObject" id="id-ec359d4a099e4a6f406cfe59" archimateElement="id-88d6e350802465aade659c2b">
             <bounds x="15" y="32" width="185" height="65"/>
@@ -3989,7 +3982,7 @@ El detalle de cada contrato está en su documentación (pestaña Properties en A
       <element xsi:type="archimate:ArchimateDiagramModel" name="V04d Detalle de los subdominios foco" id="id-6c7177ce49760499a490c662">
         <child xsi:type="archimate:Note" id="id-ebf400e395b837bfaa14b46e">
           <bounds x="10" y="10" width="1200" height="45"/>
-          <content>V4d: DETALLE DE LOS SUBDOMINIOS FOCO: QUIÉN (actor y rol), CÓMO (función), QUÉ OFRECE (servicios) Y SOBRE QUÉ (objetos)</content>
+          <content>V4d · DETALLE DE LOS SUBDOMINIOS FOCO: QUIÉN (actor y rol), CÓMO (función), QUÉ OFRECE (servicios) Y SOBRE QUÉ (objetos)</content>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-496721b2868da9216c08a2d8" archimateElement="id-8a7c79ec027a682b4b0facb1">
           <bounds x="610" y="70" width="220" height="60"/>
@@ -5204,7 +5197,9 @@ Azul = comando (proceso de aplicación) · Amarillo = evento de dominio (evento 
         <child xsi:type="archimate:DiagramObject" id="id-cf5d694301e109af3b1a4296" fillColor="#E7E6E6" archimateElement="id-150c959ce60f8327703afab7">
           <bounds x="10" y="419" width="190" height="60"/>
           <sourceConnection xsi:type="archimate:Connection" id="id-2fbca3f0f217cc24fee7165b" source="id-cf5d694301e109af3b1a4296" target="id-d49afdde7ffb691e3510c588" archimateRelationship="id-5d5a23693363af066636236b"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-3f0661925a50b03a2e5eaeff" source="id-cf5d694301e109af3b1a4296" target="id-deecc2696ee8e7dbd2c6b3c1" archimateRelationship="id-7e425aa2c85161eb31f11a6f"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-3f0661925a50b03a2e5eaeff" source="id-cf5d694301e109af3b1a4296" target="id-deecc2696ee8e7dbd2c6b3c1" archimateRelationship="id-7e425aa2c85161eb31f11a6f">
+            <bendpoint startX="464" startY="-48" endX="-756" endY="-30"/>
+          </sourceConnection>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-d49afdde7ffb691e3510c588" targetConnections="id-2fbca3f0f217cc24fee7165b id-c693b77f81f3ec2c96b55133" fillColor="#BDD7EE" archimateElement="id-794b6da1ccd1889f431090fd">
           <bounds x="260" y="419" width="210" height="60"/>
@@ -5248,8 +5243,10 @@ Azul = comando (proceso de aplicación) · Amarillo = evento de dominio (evento 
 • Se conserva la evidencia de envío</content>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-021a53fd0491ae456f1d4e39" fillColor="#E7E6E6" archimateElement="id-150c959ce60f8327703afab7">
-          <bounds x="970" y="401" width="190" height="60"/>
-          <sourceConnection xsi:type="archimate:Connection" id="id-c693b77f81f3ec2c96b55133" source="id-021a53fd0491ae456f1d4e39" target="id-d49afdde7ffb691e3510c588" archimateRelationship="id-5d5a23693363af066636236b"/>
+          <bounds x="912" y="460" width="190" height="60"/>
+          <sourceConnection xsi:type="archimate:Connection" id="id-c693b77f81f3ec2c96b55133" source="id-021a53fd0491ae456f1d4e39" target="id-d49afdde7ffb691e3510c588" archimateRelationship="id-5d5a23693363af066636236b">
+            <bendpoint startX="-206" startY="6" endX="436" endY="48"/>
+          </sourceConnection>
           <sourceConnection xsi:type="archimate:Connection" id="id-18883ebf96a1bbef97e95ebf" source="id-021a53fd0491ae456f1d4e39" target="id-deecc2696ee8e7dbd2c6b3c1" archimateRelationship="id-7e425aa2c85161eb31f11a6f"/>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-deecc2696ee8e7dbd2c6b3c1" targetConnections="id-3f0661925a50b03a2e5eaeff id-18883ebf96a1bbef97e95ebf" fillColor="#BDD7EE" archimateElement="id-9d3994e060a06b0e925f1451">
@@ -6111,7 +6108,7 @@ Cada subdominio tiene el componente de aplicación que lo implementará y sus co
         <bounds x="10" y="10" width="1500" height="85"/>
         <content>V8 · MAPA DE CONTEXTOS DELIMITADOS
 Cada flecha va del upstream (U, quien provee e influye) al downstream (D, quien depende); la etiqueta es «patrón del lado U → patrón del lado D»; lo que viaja está en la tabla de relaciones del README.
-OHS/PL = servicio abierto con lenguaje publicado (contratos V1) · CS = cliente–proveedor · CF = conformista · ACL = capa anticorrupción · P = asociación (partnership) · U = sistema externo que impone su formato.
+OHS/PL = servicio abierto con lenguaje publicado (contratos V1) · CS = cliente–proveedor · CF = conformista · ACL = capa anticorrupción · A = asociación · U = sistema externo que impone su formato.
 Naranja = core · azul = soporte · gris = genérico · verde = sistema externo.</content>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-9bab58091c1dc7efb568cdd7" targetConnections="id-a5c4b693f65521a2abbc88b7" fillColor="#DDEBF7" archimateElement="id-32cc1fbbfe65fcd5381c12ef">
@@ -6144,8 +6141,13 @@ Naranja = core · azul = soporte · gris = genérico · verde = sistema externo.
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-17a708402b610dd4f868b02e" targetConnections="id-065ecc1a4dbbdd406fda8aad id-dd8685ad9cebb2bdbcf808e9 id-0558fb50555e66e9b91ccfc1" fillColor="#DDEBF7" archimateElement="id-3d23fdf30e2170f94c0bfce2">
         <bounds x="420" y="560" width="300" height="110"/>
-        <sourceConnection xsi:type="archimate:Connection" id="id-c94d4461b0ca8cd590a7f92f" source="id-17a708402b610dd4f868b02e" target="id-f0d335d955c01ce23a383794" archimateRelationship="id-4b6a9cca6741247c9aef4866"/>
-        <sourceConnection xsi:type="archimate:Connection" id="id-86144d5b7593dfedbe4aa631" source="id-17a708402b610dd4f868b02e" target="id-2423ddfaebfe9cb7d03f82ac" archimateRelationship="id-efb258a2a889980ab9d32913"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-c94d4461b0ca8cd590a7f92f" source="id-17a708402b610dd4f868b02e" target="id-f0d335d955c01ce23a383794" archimateRelationship="id-4b6a9cca6741247c9aef4866">
+          <bendpoint startX="246" startY="-198" endX="-254" endY="262"/>
+        </sourceConnection>
+        <sourceConnection xsi:type="archimate:Connection" id="id-86144d5b7593dfedbe4aa631" source="id-17a708402b610dd4f868b02e" target="id-2423ddfaebfe9cb7d03f82ac" archimateRelationship="id-efb258a2a889980ab9d32913">
+          <bendpoint startX="-137" startY="-150" endX="293" endY="10"/>
+          <bendpoint startX="-209" startY="-158" endX="221" endY="2"/>
+        </sourceConnection>
         <child xsi:type="archimate:DiagramObject" id="id-8a4b28cb51f099558a2e7431" archimateElement="id-45574af7fa66627e7bfc3b25">
           <bounds x="60" y="45" width="180" height="50"/>
         </child>
@@ -6175,7 +6177,7 @@ Naranja = core · azul = soporte · gris = genérico · verde = sistema externo.
         </child>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-5b216342c751d559273e1c23" targetConnections="id-bc822a00549d09f4f4bd9db5 id-db40f2dc84e01f9571b68ff6 id-b479f4eda1451b05d93335d1 id-23b7d33dc7feb848c0356207" fillColor="#DDEBF7" archimateElement="id-e78a83805c28bdc042e012b8">
-        <bounds x="940" y="860" width="300" height="110"/>
+        <bounds x="996" y="860" width="300" height="110"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-0480242f8449085fe9f26032" source="id-5b216342c751d559273e1c23" target="id-3158aaffd0ffc28b9ccf9981" archimateRelationship="id-5d3904e1fb19533ba680d861">
           <bendpoint startX="615" startY="-130" endX="-416" endY="470"/>
         </sourceConnection>
@@ -6205,15 +6207,22 @@ Naranja = core · azul = soporte · gris = genérico · verde = sistema externo.
       <child xsi:type="archimate:DiagramObject" id="id-b97813250f9355474489b4f7" fillColor="#E2EFDA" archimateElement="id-cddf7db24841457ea57e96b2">
         <bounds x="10" y="200" width="260" height="70"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-a5c4b693f65521a2abbc88b7" source="id-b97813250f9355474489b4f7" target="id-9bab58091c1dc7efb568cdd7" archimateRelationship="id-d9731f4ce84660785df42239"/>
-        <sourceConnection xsi:type="archimate:Connection" id="id-db40f2dc84e01f9571b68ff6" source="id-b97813250f9355474489b4f7" target="id-5b216342c751d559273e1c23" archimateRelationship="id-6dff8c6a800f29296fdadcf3"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-db40f2dc84e01f9571b68ff6" source="id-b97813250f9355474489b4f7" target="id-5b216342c751d559273e1c23" archimateRelationship="id-6dff8c6a800f29296fdadcf3">
+          <bendpoint startX="189" startY="230" endX="-761" endY="-450"/>
+          <bendpoint startX="285" startY="470" endX="-721" endY="-210"/>
+          <bendpoint startX="325" startY="558" endX="-681" endY="-122"/>
+        </sourceConnection>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-2423ddfaebfe9cb7d03f82ac" targetConnections="id-86144d5b7593dfedbe4aa631" fillColor="#E2EFDA" archimateElement="id-d33abe2a68f4f1c9c3eb4758">
-        <bounds x="10" y="470" width="260" height="70"/>
+        <bounds x="10" y="420" width="260" height="70"/>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-de956f74bf2988d0498d1565" fillColor="#E2EFDA" archimateElement="id-8f23bb68c636fc729ba7b72c">
         <bounds x="10" y="580" width="260" height="70"/>
         <sourceConnection xsi:type="archimate:Connection" id="id-0558fb50555e66e9b91ccfc1" source="id-de956f74bf2988d0498d1565" target="id-17a708402b610dd4f868b02e" archimateRelationship="id-e655f852614b01e4ec2153fc"/>
-        <sourceConnection xsi:type="archimate:Connection" id="id-0453ff66312208ba98caa9d8" source="id-de956f74bf2988d0498d1565" target="id-84343a66249c1f6e7dcb1392" archimateRelationship="id-2d2a6d28c674f821ec6d7636"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-0453ff66312208ba98caa9d8" source="id-de956f74bf2988d0498d1565" target="id-84343a66249c1f6e7dcb1392" archimateRelationship="id-2d2a6d28c674f821ec6d7636">
+          <bendpoint startX="396" startY="-110" endX="-1074" endY="190"/>
+          <bendpoint startX="716" startY="-118" endX="-754" endY="182"/>
+        </sourceConnection>
       </child>
       <child xsi:type="archimate:DiagramObject" id="id-c5b9628ffd2698dae3824ba0" fillColor="#E2EFDA" archimateElement="id-16ce4b6fc8fa09d857d8da38">
         <bounds x="10" y="820" width="260" height="70"/>
