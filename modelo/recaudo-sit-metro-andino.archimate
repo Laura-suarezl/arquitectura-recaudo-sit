@@ -950,7 +950,7 @@ Estilo: Asíncrono</documentation>
       <property key="fuente" value="H20–H22, H32 · glosario"/>
     </element>
     <element xsi:type="archimate:BusinessObject" name="Viaje" id="id-742541cdf987e310483d2343">
-      <documentation>Desplazamiento completo de origen a destino, de hasta 3 tramos dentro de la ventana de transbordo. Ejemplo: Casa → alimentador → metro: 1 viaje con 2 tramos.</documentation>
+      <documentation>Desplazamiento completo de origen a destino, de hasta 3 tramos dentro de la ventana de transbordo. Ejemplo: Casa -> alimentador -> metro: 1 viaje con 2 tramos.</documentation>
       <property key="fuente" value="H20–H22, H32 · glosario"/>
     </element>
     <element xsi:type="archimate:BusinessObject" name="Esquema tarifario" id="id-7bdbd0e6a4952560e34b437a">
@@ -2276,13 +2276,13 @@ Estilo: Asíncrono</documentation>
   </folder>
   <folder name="Implementation &amp; Migration" id="id-5f3c96b56eb9cdd93f85cd52" type="implementation_migration"/>
   <folder name="Other" id="id-41fedbf6e6ccea2b348a7996" type="other">
-    <element xsi:type="archimate:Grouping" name="Capa 1 · Proceso de negocio de punta a punta" id="id-68ba22ffb564e60f1b28a8aa"/>
-    <element xsi:type="archimate:Grouping" name="Capa 2 · Servicios de negocio de plataforma" id="id-a95a23a651f55afd805cb2fc"/>
-    <element xsi:type="archimate:Grouping" name="Capa 3 · Servicios de dominio" id="id-377937a23b9b8002ffc30843"/>
-    <element xsi:type="archimate:Grouping" name="Capa 4 · Servicios básicos de los subdominios foco" id="id-77fdf539d8a5700d78b26051"/>
-    <element xsi:type="archimate:Grouping" name="Capa 5 · Servicios de la capa anticorrupción (interoperabilidad)" id="id-c61fcd349c2e09eab7395669"/>
-    <element xsi:type="archimate:Grouping" name="Capa 6 · Servicios de subdominio fundamental (datos maestros)" id="id-b89469a017adc1593677d1fb"/>
-    <element xsi:type="archimate:Grouping" name="Capa 7 · Servicios de infraestructura" id="id-b77dcede9061af8e637350a9"/>
+    <element xsi:type="archimate:Grouping" name="Capa 1: Proceso de negocio de punta a punta" id="id-68ba22ffb564e60f1b28a8aa"/>
+    <element xsi:type="archimate:Grouping" name="Capa 2: Servicios de negocio de plataforma" id="id-a95a23a651f55afd805cb2fc"/>
+    <element xsi:type="archimate:Grouping" name="Capa 3: Servicios de dominio" id="id-377937a23b9b8002ffc30843"/>
+    <element xsi:type="archimate:Grouping" name="Capa 4: Servicios básicos de los subdominios foco" id="id-77fdf539d8a5700d78b26051"/>
+    <element xsi:type="archimate:Grouping" name="Capa 5: Servicios de la capa anticorrupción (interoperabilidad)" id="id-c61fcd349c2e09eab7395669"/>
+    <element xsi:type="archimate:Grouping" name="Capa 6: Servicios de subdominio fundamental (datos maestros)" id="id-b89469a017adc1593677d1fb"/>
+    <element xsi:type="archimate:Grouping" name="Capa 7: Servicios de infraestructura" id="id-b77dcede9061af8e637350a9"/>
     <element xsi:type="archimate:Grouping" name="Gestión tarifaria · SOPORTE" id="id-0b2d03b2b599e11efa878368">
       <documentation>Mantiene y versiona el esquema que aplica Validaciones; cambia una vez al año por decreto y exige doble control. Es la configuración del core, no el core</documentation>
       <property key="clasificacion" value="Soporte"/>
@@ -3400,8 +3400,8 @@ Invariantes:
       <element xsi:type="archimate:ArchimateDiagramModel" name="V04 Descomposición de servicios" id="id-33489fe04edb37cd0d259bad">
         <child xsi:type="archimate:Note" id="id-220af61744f45a8e8860cdb4">
           <bounds x="10" y="10" width="1500" height="55"/>
-          <content>V4 · DESCOMPOSICIÓN DEL PROCESO DE RECAUDO EN SIETE CAPAS DE SERVICIO (jerarquía de servicios del curso)
-Amarillo = servicio incluido · Gris = excluido (justificación en la tabla de inclusión y exclusión) · Naranja = servicio de la capa anticorrupción. Las capas inferiores sirven a las superiores (relaciones en el modelo y en V10).</content>
+          <content>V4: DESCOMPOSICIÓN DEL PROCESO DE RECAUDO EN SIETE CAPAS DE SERVICIO (jerarquía de servicios)
+Amarillo = servicio incluido, Gris = excluido (justificación en la tabla de inclusión y exclusión), Naranja = servicio de la capa anticorrupción. Las capas inferiores sirven a las superiores (relaciones en el modelo y en V10).</content>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-f51dea338514d20f61e8bb5e" archimateElement="id-68ba22ffb564e60f1b28a8aa">
           <bounds x="10" y="80" width="1980" height="120"/>
@@ -3569,7 +3569,7 @@ Amarillo = servicio incluido · Gris = excluido (justificación en la tabla de i
           </child>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-cb8b6003135475bd33b83b77" archimateElement="id-b77dcede9061af8e637350a9">
-          <bounds x="10" y="890" width="1980" height="120"/>
+          <bounds x="-60" y="888" width="1980" height="120"/>
           <child xsi:type="archimate:DiagramObject" id="id-9852d5be127d055497a24ee9" archimateElement="id-88d6e350802465aade659c2b">
             <bounds x="647" y="40" width="160" height="65"/>
           </child>
@@ -3588,8 +3588,8 @@ Amarillo = servicio incluido · Gris = excluido (justificación en la tabla de i
       <element xsi:type="archimate:ArchimateDiagramModel" name="V04b Capa anticorrupción - servicios externos" id="id-9faad7c578c50f53ca405102">
         <child xsi:type="archimate:Note" id="id-540637433da04efdb6460c96">
           <bounds x="10" y="10" width="1500" height="55"/>
-          <content>V4b · CAPA ANTICORRUPCIÓN: CON QUIÉN SE INTERCAMBIA INFORMACIÓN Y EN QUÉ DIRECCIÓN
-Cada flecha es un flujo con la información que viaja; el sentido de la flecha es la dirección. Detalle de frecuencia y formato en la tabla de externos del README.</content>
+          <content>V4b: CAPA ANTICORRUPCIÓN: CON QUIÉN SE INTERCAMBIA INFORMACIÓN Y EN QUÉ DIRECCIÓN
+Cada flecha es un flujo con la información que viaja, el sentido de la flecha es la dirección. Detalle de frecuencia y formato en la tabla de externos del README.</content>
         </child>
         <child xsi:type="archimate:Group" id="id-916862f1f40ec8099203d082">
           <bounds x="10" y="80" width="960" height="135"/>
@@ -3627,7 +3627,9 @@ Cada flecha es un flujo con la información que viaja; el sentido de la flecha e
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-da0b99f3f92b8b99ded2c82a" targetConnections="id-0f417d5fddf9040358c429ff" archimateElement="id-6ff3a3e40053674c1b8b8033">
             <bounds x="680" y="30" width="260" height="60"/>
-            <sourceConnection xsi:type="archimate:Connection" id="id-5e4a1dbf4b724beeea2dd644" source="id-da0b99f3f92b8b99ded2c82a" target="id-ed268949cc1520fa3f2d1d2a" archimateRelationship="id-2c4c2075efe91acddc73f60e"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-5e4a1dbf4b724beeea2dd644" source="id-da0b99f3f92b8b99ded2c82a" target="id-ed268949cc1520fa3f2d1d2a" archimateRelationship="id-2c4c2075efe91acddc73f60e">
+              <bendpoint startX="-340" startY="49" endX="336" endY="-17"/>
+            </sourceConnection>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-832dd0a0b90ad852ecc76d25" archimateElement="id-e5c90c35b1309ea5f7d53398">
             <bounds x="680" y="125" width="260" height="60"/>
@@ -3707,7 +3709,7 @@ Cada flecha es un flujo con la información que viaja; el sentido de la flecha e
           <child xsi:type="archimate:DiagramObject" id="id-a464e98944b66d8909bac740" targetConnections="id-440caebc22ca36b8860402d7" fillColor="#FCE4D6" archimateElement="id-ee0ac45b3f4b103469c407cc">
             <bounds x="20" y="190" width="230" height="65"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-e768fc51c52c9d153e078883" source="id-a464e98944b66d8909bac740" target="id-f347f0d419c6da488753fa8d" archimateRelationship="id-781e6f38c842cc7a2ddbbbda">
-              <bendpoint startX="330" startY="-110" endX="-345" endY="52"/>
+              <bendpoint startX="94" startY="-155" endX="-581" endY="7"/>
             </sourceConnection>
             <sourceConnection xsi:type="archimate:Connection" id="id-d6914bc6511f3f87b6a18b39" source="id-a464e98944b66d8909bac740" target="id-7f487b045fa4728229545c5b" archimateRelationship="id-2710ea5f9e1c54a837702378"/>
             <sourceConnection xsi:type="archimate:Connection" id="id-76ad6a4f0aca8bb395071138" source="id-a464e98944b66d8909bac740" target="id-0df47fb73cdc6fde501475d4" archimateRelationship="id-8f24253559cc6954fa4e295f"/>
@@ -3715,7 +3717,12 @@ Cada flecha es un flujo con la información que viaja; el sentido de la flecha e
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-f347f0d419c6da488753fa8d" targetConnections="id-e768fc51c52c9d153e078883" archimateElement="id-b97a1a4e0c62c7d1e519bfc7">
             <bounds x="680" y="30" width="260" height="60"/>
-            <sourceConnection xsi:type="archimate:Connection" id="id-440caebc22ca36b8860402d7" source="id-f347f0d419c6da488753fa8d" target="id-a464e98944b66d8909bac740" archimateRelationship="id-fbedd217ec183fe8de9bdd92"/>
+            <sourceConnection xsi:type="archimate:Connection" id="id-440caebc22ca36b8860402d7" source="id-f347f0d419c6da488753fa8d" target="id-a464e98944b66d8909bac740" archimateRelationship="id-fbedd217ec183fe8de9bdd92">
+              <bendpoint startX="-177" startY="26" endX="498" endY="-136"/>
+              <bendpoint startX="-177" startY="64" endX="498" endY="-98"/>
+              <bendpoint startX="-245" startY="64" endX="430" endY="-98"/>
+              <bendpoint startX="-552" startY="64" endX="123" endY="-98"/>
+            </sourceConnection>
           </child>
           <child xsi:type="archimate:DiagramObject" id="id-7f487b045fa4728229545c5b" targetConnections="id-d6914bc6511f3f87b6a18b39" archimateElement="id-2f9c9c8e9a95da7905449f91">
             <bounds x="680" y="125" width="260" height="60"/>
@@ -3742,10 +3749,10 @@ Cada flecha es un flujo con la información que viaja; el sentido de la flecha e
       <element xsi:type="archimate:ArchimateDiagramModel" name="V04c Contratos de servicio (Contract First)" id="id-a37c58cc1455a0b18cd3cac4">
         <child xsi:type="archimate:Note" id="id-3a9b0706f9228b2ec6b174ab">
           <bounds x="10" y="10" width="1200" height="55"/>
-          <content>V4c · CONTRACT FIRST: UN CONTRATO POR CADA SERVICIO INCLUIDO DE TAMAÑO FINAL
+          <content>V4c: CONTRACT FIRST: UN CONTRATO POR CADA SERVICIO INCLUIDO DE TAMAÑO FINAL
 El detalle de cada contrato está en su documentación (pestaña Properties en Archi) y en la sección 4 del README.</content>
         </child>
-        <child xsi:type="archimate:Group" id="id-e6909bcbe1bc46a47db9b473" name="Capa 3 · Servicios de dominio">
+        <child xsi:type="archimate:Group" id="id-e6909bcbe1bc46a47db9b473" name="Capa 3: Servicios de dominio" textAlignment="1">
           <bounds x="10" y="80" width="1290" height="200"/>
           <child xsi:type="archimate:DiagramObject" id="id-86dd4824cfb42666b246fc78" archimateElement="id-ff77da031f7215c22abbc4fe">
             <bounds x="15" y="32" width="185" height="65"/>
@@ -3790,7 +3797,7 @@ El detalle de cada contrato está en su documentación (pestaña Properties en A
             <bounds x="1080" y="112" width="185" height="65"/>
           </child>
         </child>
-        <child xsi:type="archimate:Group" id="id-579c505e657203912b0737da" name="Capa 4 · Servicios básicos de los subdominios foco">
+        <child xsi:type="archimate:Group" id="id-579c505e657203912b0737da" name="Capa 4: Servicios básicos de los subdominios foco" textAlignment="1">
           <bounds x="10" y="295" width="1290" height="280"/>
           <child xsi:type="archimate:DiagramObject" id="id-a022febe1b672b4315d52ae2" archimateElement="id-eb05356d6ef319d023aa21d5">
             <bounds x="15" y="32" width="185" height="65"/>
@@ -3856,7 +3863,7 @@ El detalle de cada contrato está en su documentación (pestaña Properties en A
             <bounds x="1080" y="192" width="185" height="65"/>
           </child>
         </child>
-        <child xsi:type="archimate:Group" id="id-4749864882482fefa0d16440" name="Capa 5 · Servicios de la capa anticorrupción (interoperabilidad)">
+        <child xsi:type="archimate:Group" id="id-4749864882482fefa0d16440" name="Capa 5: Servicios de la capa anticorrupción (interoperabilidad)" textAlignment="1">
           <bounds x="10" y="590" width="1290" height="360"/>
           <child xsi:type="archimate:DiagramObject" id="id-7a83fc6ef90dc9f9e4abc7b4" fillColor="#FCE4D6" archimateElement="id-0b9b2b38d97a535af9cdd80a">
             <bounds x="15" y="32" width="185" height="65"/>
@@ -3929,7 +3936,7 @@ El detalle de cada contrato está en su documentación (pestaña Properties en A
             <bounds x="230" y="272" width="185" height="65"/>
           </child>
         </child>
-        <child xsi:type="archimate:Group" id="id-ece881ff30c608c6dac2986f" name="Capa 6 · Servicios de subdominio fundamental (datos maestros)">
+        <child xsi:type="archimate:Group" id="id-ece881ff30c608c6dac2986f" name="Capa 6: Servicios de subdominio fundamental (datos maestros)" textAlignment="1">
           <bounds x="10" y="965" width="1290" height="120"/>
           <child xsi:type="archimate:DiagramObject" id="id-9e6670869732bb837079e68c" archimateElement="id-4ccaf93679b2269af6972a9d">
             <bounds x="15" y="32" width="185" height="65"/>
@@ -3953,7 +3960,7 @@ El detalle de cada contrato está en su documentación (pestaña Properties en A
             <bounds x="1080" y="32" width="185" height="65"/>
           </child>
         </child>
-        <child xsi:type="archimate:Group" id="id-88034000b23f477bc113e7c6" name="Capa 7 · Servicios de infraestructura">
+        <child xsi:type="archimate:Group" id="id-88034000b23f477bc113e7c6" name="Capa 7: Servicios de infraestructura" textAlignment="1">
           <bounds x="10" y="1100" width="1290" height="120"/>
           <child xsi:type="archimate:DiagramObject" id="id-ec359d4a099e4a6f406cfe59" archimateElement="id-88d6e350802465aade659c2b">
             <bounds x="15" y="32" width="185" height="65"/>
@@ -3982,7 +3989,7 @@ El detalle de cada contrato está en su documentación (pestaña Properties en A
       <element xsi:type="archimate:ArchimateDiagramModel" name="V04d Detalle de los subdominios foco" id="id-6c7177ce49760499a490c662">
         <child xsi:type="archimate:Note" id="id-ebf400e395b837bfaa14b46e">
           <bounds x="10" y="10" width="1200" height="45"/>
-          <content>V4d · DETALLE DE LOS SUBDOMINIOS FOCO: QUIÉN (actor y rol), CÓMO (función), QUÉ OFRECE (servicios) Y SOBRE QUÉ (objetos)</content>
+          <content>V4d: DETALLE DE LOS SUBDOMINIOS FOCO: QUIÉN (actor y rol), CÓMO (función), QUÉ OFRECE (servicios) Y SOBRE QUÉ (objetos)</content>
         </child>
         <child xsi:type="archimate:DiagramObject" id="id-496721b2868da9216c08a2d8" archimateElement="id-8a7c79ec027a682b4b0facb1">
           <bounds x="610" y="70" width="220" height="60"/>
